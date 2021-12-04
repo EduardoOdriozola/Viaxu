@@ -176,6 +176,91 @@ footer {
   .home-tarjeta__7 {
     background-image: url(../multimedia/actividades-pelota.png); }
 
+.home-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem 2rem;
+  margin-top: 4rem; }
+  .home-contacto iframe {
+    width: 40%; }
+  .home-contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+    border-top: 2px outset #000000;
+    border-left: 2px outset #000000;
+    box-shadow: 7px 7px #68C3D4; }
+    .home-contacto form input {
+      width: 100%;
+      padding: 0.3rem;
+      margin-bottom: 1.5rem;
+      border: 0;
+      border-bottom: 1px solid #68C3D4; }
+    .home-contacto form textarea {
+      width: 100%;
+      color: #0D1821; }
+  .home-contacto label {
+    display: flex;
+    justify-content: center;
+    color: #0D1821;
+    padding: 0.5rem; }
+    .home-contacto label a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #35CE8D;
+      padding-left: 0.2rem; }
+    .home-contacto label a:hover {
+      text-decoration: underline;
+      color: #35CE8D;
+      font-weight: 700; }
+
+@media only screen and (max-width: 1350px) {
+  .home-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; }
+    .home-contacto form {
+      width: 70%;
+      min-width: 450px; }
+    .home-contacto iframe {
+      width: 80%;
+      height: 50vh; } }
+
+@media only screen and (max-width: 650px) {
+  .home-contacto iframe {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .fondo-home__img {
+    margin-top: 10em;
+    width: 120px; }
+  .home-contacto {
+    margin: 1rem 1rem; }
+    .home-contacto form {
+      width: 100%;
+      min-width: 320px;
+      padding: 1rem 1rem;
+      border-radius: 0%;
+      border-top: 2px outset #000000;
+      border-left: none;
+      border-bottom: 2px outset #000000;
+      box-shadow: none; }
+      .home-contacto form textarea {
+        width: 100%; }
+      .home-contacto form label {
+        padding: 0rem 0rem; }
+      .home-contacto form input {
+        padding: 0.3rem;
+        margin-bottom: 1.5rem;
+        border: 0;
+        border-bottom: 1px solid #68C3D4; } }
+
 .botones {
   display: flex;
   flex-flow: row;
@@ -270,91 +355,6 @@ footer {
     padding-top: 0.5em;
     font-weight: 700;
     text-shadow: 2px 2px 2px #0D1821; }
-
-.home-contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 2rem 2rem;
-  margin-top: 4rem; }
-  .home-contacto iframe {
-    width: 40%; }
-  .home-contacto form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    padding: 1rem 3rem;
-    border-radius: 5%;
-    border-top: 2px outset #000000;
-    border-left: 2px outset #000000;
-    box-shadow: 7px 7px #68C3D4; }
-    .home-contacto form input {
-      width: 100%;
-      padding: 0.3rem;
-      margin-bottom: 1.5rem;
-      border: 0;
-      border-bottom: 1px solid #68C3D4; }
-    .home-contacto form textarea {
-      width: 100%;
-      color: #0D1821; }
-  .home-contacto label {
-    display: flex;
-    justify-content: center;
-    color: #0D1821;
-    padding: 0.5rem; }
-    .home-contacto label a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #35CE8D;
-      padding-left: 0.2rem; }
-    .home-contacto label a:hover {
-      text-decoration: underline;
-      color: #35CE8D;
-      font-weight: 700; }
-
-@media only screen and (max-width: 1350px) {
-  .home-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; }
-    .home-contacto form {
-      width: 70%;
-      min-width: 450px; }
-    .home-contacto iframe {
-      width: 80%;
-      height: 50vh; } }
-
-@media only screen and (max-width: 650px) {
-  .home-contacto iframe {
-    display: none; } }
-
-@media only screen and (max-width: 480px) {
-  .fondo-home__img {
-    margin-top: 10em;
-    width: 120px; }
-  .home-contacto {
-    margin: 1rem 1rem; }
-    .home-contacto form {
-      width: 100%;
-      min-width: 320px;
-      padding: 1rem 1rem;
-      border-radius: 0%;
-      border-top: 2px outset #000000;
-      border-left: none;
-      border-bottom: 2px outset #000000;
-      box-shadow: none; }
-      .home-contacto form textarea {
-        width: 100%; }
-      .home-contacto form label {
-        padding: 0rem 0rem; }
-      .home-contacto form input {
-        padding: 0.3rem;
-        margin-bottom: 1.5rem;
-        border: 0;
-        border-bottom: 1px solid #68C3D4; } }
 
 .imgExterna, .imgExterna__ciervo, .imgExterna__pajaro, .imgExterna__tatu {
   background-repeat: no-repeat;
