@@ -182,8 +182,7 @@ footer {
   display: flex;
   flex-flow: row;
   gap: 1em;
-  justify-content: center;
-  padding: 1.5rem;}
+  padding: 1.5rem; }
   .botones__estilo {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.5);
