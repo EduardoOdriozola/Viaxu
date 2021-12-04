@@ -182,8 +182,7 @@ footer {
   display: flex;
   flex-flow: row;
   gap: 1em;
-  justify-content: center;
-  padding: 1.5rem;}
+  padding: 1.5rem; }
   .botones__estilo {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.5);
@@ -282,6 +281,8 @@ footer {
   .home-contacto form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     padding: 1rem 3rem;
     border-radius: 5%;
@@ -289,6 +290,7 @@ footer {
     border-left: 2px outset #000000;
     box-shadow: 7px 7px #68C3D4; }
     .home-contacto form input {
+      width: 100%;
       padding: 0.3rem;
       margin-bottom: 1.5rem;
       border: 0;

@@ -35,6 +35,8 @@
     form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 40%;
         padding: 1rem 3rem;
         border-radius: 5%;
@@ -43,6 +45,7 @@
         box-shadow: 7px 7px $crl--celeste;
 
         input {
+            width: 100%;
             padding: 0.3rem;
             margin-bottom: 1.5rem;
             border: 0;
