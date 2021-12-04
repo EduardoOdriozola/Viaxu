@@ -365,15 +365,18 @@ footer {
 
 .imgExterna__ciervo {
   background-image: url(../multimedia/galeria-ciervo.jpg);
-  height: 35vh; }
+  height: 35vh;
+  transition: 500ms; }
 
 .imgExterna__pajaro {
   background-image: url(../multimedia/galeria-pajaro.jpg);
-  height: 35vh; }
+  height: 35vh;
+  transition: 500ms; }
 
 .imgExterna__tatu {
   background-image: url(../multimedia/galeria-tatu.jpg);
-  height: 35vh; }
+  height: 35vh;
+  transition: 500ms; }
 
 .grid-galeria {
   display: grid;
@@ -387,7 +390,8 @@ footer {
   .grid-galeria__img {
     width: 400px;
     height: 95%;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: 500ms; }
   .grid-galeria__video {
     width: 560px;
     height: 315px; }
@@ -395,13 +399,13 @@ footer {
 div.grid-galeria .grid-galeria__img:hover {
   transform: scale(1.05);
   box-shadow: -10px -10px 5px #000000;
-  border-radius: 2%;
+  border-radius: 3%;
   transition: 500ms; }
 
 div.grid-galeria div:hover {
   transform: scale(1.05);
   box-shadow: -10px -10px 5px #000000;
-  border-radius: 2%;
+  border-radius: 3%;
   transition: 500ms; }
 
 @media only screen and (max-width: 1240px) {

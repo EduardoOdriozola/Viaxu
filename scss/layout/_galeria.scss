@@ -20,6 +20,7 @@ $ancho_imgExterna: $ancho_galeria - 65vh;
         @extend .imgExterna;
         background-image: url(../multimedia/galeria-#{$animales}.jpg);
         height: $ancho_imgExterna;
+        transition: 500ms;
     }
 }
 //FIN Operaciones Galeria
@@ -38,6 +39,7 @@ $ancho_imgExterna: $ancho_galeria - 65vh;
         width: 400px;
         height: 95%;
         overflow: hidden;
+        transition: 500ms;
     }
 
     &__video {
@@ -49,14 +51,14 @@ $ancho_imgExterna: $ancho_galeria - 65vh;
 div.grid-galeria .grid-galeria__img:hover {
     transform: scale(1.05);
     box-shadow: -10px -10px 5px $crl--negro;
-    border-radius: 2%;
+    border-radius: 3%;
     transition: 500ms;
 }
 
 div.grid-galeria div:hover {
     transform: scale(1.05);
     box-shadow: -10px -10px 5px $crl--negro;
-    border-radius: 2%;
+    border-radius: 3%;
     transition: 500ms;
 }
 
