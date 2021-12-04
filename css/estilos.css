@@ -61,8 +61,7 @@ footer {
     color: #000000;
     opacity: 1;
     text-decoration: underline;
-    -text-underline-offset: 0.15em;
-    transition: 300ms; }
+    -text-underline-offset: 0.15em; }
 
 .destacar {
   font-weight: 700;
