@@ -177,16 +177,17 @@ footer {
     background-image: url(../multimedia/actividades-pelota.png); }
 
 .botones {
-  width: 250px;
-  align-self: center;
   display: flex;
   flex-flow: row;
+  justify-content: center;
+  align-self: center;
+  width: 250px;
   gap: 1em;
   padding: 1.5rem; }
   .botones__estilo {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.5);
-    border: 1px outset #68C3D4;
+    box-shadow: 2px 1px 2px #68C3D4;
     border-radius: 7px;
     font-weight: 700; }
     .botones__estilo:hover {
@@ -434,54 +435,3 @@ div.grid-galeria div:hover {
     box-shadow: -10px -10px 5px #000000;
     border-radius: 2%;
     transition: 500ms; } }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 5rem; }
-  .contacto__formulario {
-    padding: 1rem;
-    width: 40%;
-    border-radius: 5%;
-    border-top: 2px outset #000000;
-    border-left: 2px outset #000000;
-    box-shadow: 7px 7px #68C3D4;
-    background-image: url(../multimedia/contacto-fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; }
-    .contacto__formulario input {
-      width: 100%;
-      padding: 0.3rem;
-      margin-bottom: 1.5rem; }
-    .contacto__formulario textarea {
-      width: 100%; }
-    .contacto__formulario label {
-      color: #FFFFFF;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin-bottom: 0.5rem; }
-    .contacto__formulario a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #35CE8D;
-      padding-left: 0.2rem; }
-    .contacto__formulario a:hover {
-      text-decoration: underline;
-      color: #35CE8D;
-      font-weight: 700; }
-
-@media only screen and (max-width: 1350px) {
-  .contacto__formulario {
-    max-width: 70%;
-    min-width: 450px; } }
-
-@media only screen and (max-width: 480px) {
-  .contacto__formulario {
-    min-width: 320px;
-    border-radius: 0%;
-    border-top: none;
-    border-left: none;
-    box-shadow: none; } }

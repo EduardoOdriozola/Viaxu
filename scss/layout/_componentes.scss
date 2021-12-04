@@ -147,17 +147,18 @@
 }
 
 .botones {
-    width: 250px;
-    align-self: center;
-	display: flex;
+    display: flex;
 	flex-flow: row;
+    justify-content: center;
+    align-self: center;
+    width: 250px;
 	gap: 1em;
     padding: 1.5rem;
     
     &__estilo {
         color: $crl--negro;
         background-color: rgba($crl--blanco, $alpha: 0.5);
-        border: 1px outset $crl--celeste;
+        box-shadow: 2px 1px 2px $crl--celeste;
         border-radius: 7px;
         font-weight: 700;
 
