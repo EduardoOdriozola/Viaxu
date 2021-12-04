@@ -61,8 +61,7 @@ footer {
     color: #000000;
     opacity: 1;
     text-decoration: underline;
-    -text-underline-offset: 0.15em;
-    transition: 300ms; }
+    -text-underline-offset: 0.15em; }
 
 .destacar {
   font-weight: 700;
@@ -176,17 +175,100 @@ footer {
   .home-tarjeta__7 {
     background-image: url(../multimedia/actividades-pelota.png); }
 
+.home-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem 2rem;
+  margin-top: 4rem; }
+  .home-contacto iframe {
+    width: 40%; }
+  .home-contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+    border-top: 2px outset #000000;
+    border-left: 2px outset #000000;
+    box-shadow: 7px 7px #68C3D4; }
+    .home-contacto form input {
+      width: 100%;
+      padding: 0.3rem;
+      margin-bottom: 1.5rem;
+      border: 0;
+      border-bottom: 1px solid #68C3D4; }
+    .home-contacto form textarea {
+      width: 100%;
+      color: #0D1821; }
+  .home-contacto label {
+    display: flex;
+    justify-content: center;
+    color: #0D1821;
+    padding: 0.5rem; }
+    .home-contacto label a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #35CE8D;
+      padding-left: 0.2rem; }
+    .home-contacto label a:hover {
+      text-decoration: underline;
+      color: #35CE8D;
+      font-weight: 700; }
+
+@media only screen and (max-width: 1350px) {
+  .home-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; }
+    .home-contacto form {
+      width: 70%;
+      min-width: 450px; }
+    .home-contacto iframe {
+      width: 80%;
+      height: 50vh; } }
+
+@media only screen and (max-width: 650px) {
+  .home-contacto iframe {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .home-contacto {
+    margin: 1rem 1rem; }
+    .home-contacto form {
+      width: 100%;
+      min-width: 320px;
+      padding: 1rem 1rem;
+      border-radius: 0%;
+      border-top: 2px outset #000000;
+      border-left: none;
+      border-bottom: 2px outset #000000;
+      box-shadow: none; }
+      .home-contacto form textarea {
+        width: 100%; }
+      .home-contacto form label {
+        padding: 0rem 0rem; }
+      .home-contacto form input {
+        padding: 0.3rem;
+        margin-bottom: 1.5rem;
+        border: 0;
+        border-bottom: 1px solid #68C3D4; } }
+
 .botones {
-  width: 250px;
-  align-self: center;
   display: flex;
   flex-flow: row;
+  justify-content: center;
+  align-self: center;
+  width: 250px;
   gap: 1em;
   padding: 1.5rem; }
   .botones__estilo {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.5);
-    border: 1px outset #68C3D4;
+    box-shadow: 2px 1px 2px #68C3D4;
     border-radius: 7px;
     font-weight: 700; }
     .botones__estilo:hover {
@@ -270,87 +352,10 @@ footer {
     font-weight: 700;
     text-shadow: 2px 2px 2px #0D1821; }
 
-.home-contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 2rem 2rem;
-  margin-top: 4rem; }
-  .home-contacto iframe {
-    width: 40%; }
-  .home-contacto form {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 1rem 3rem;
-    border-radius: 5%;
-    border-top: 2px outset #000000;
-    border-left: 2px outset #000000;
-    box-shadow: 7px 7px #68C3D4; }
-    .home-contacto form input {
-      padding: 0.3rem;
-      margin-bottom: 1.5rem;
-      border: 0;
-      border-bottom: 1px solid #68C3D4; }
-    .home-contacto form textarea {
-      width: 100%;
-      color: #0D1821; }
-  .home-contacto label {
-    display: flex;
-    justify-content: center;
-    color: #0D1821;
-    padding: 0.5rem; }
-    .home-contacto label a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #35CE8D;
-      padding-left: 0.2rem; }
-    .home-contacto label a:hover {
-      text-decoration: underline;
-      color: #35CE8D;
-      font-weight: 700; }
-
-@media only screen and (max-width: 1350px) {
-  .home-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; }
-    .home-contacto form {
-      width: 70%;
-      min-width: 450px; }
-    .home-contacto iframe {
-      width: 80%;
-      height: 50vh; } }
-
-@media only screen and (max-width: 650px) {
-  .home-contacto iframe {
-    display: none; } }
-
 @media only screen and (max-width: 480px) {
   .fondo-home__img {
     margin-top: 10em;
-    width: 120px; }
-  .home-contacto {
-    margin: 1rem 1rem; }
-    .home-contacto form {
-      width: 100%;
-      min-width: 320px;
-      padding: 1rem 1rem;
-      border-radius: 0%;
-      border-top: 2px outset #000000;
-      border-left: none;
-      border-bottom: 2px outset #000000;
-      box-shadow: none; }
-      .home-contacto form textarea {
-        width: 100%; }
-      .home-contacto form label {
-        padding: 0rem 0rem; }
-      .home-contacto form input {
-        padding: 0.3rem;
-        margin-bottom: 1.5rem;
-        border: 0;
-        border-bottom: 1px solid #68C3D4; } }
+    width: 120px; } }
 
 .imgExterna, .imgExterna__ciervo, .imgExterna__pajaro, .imgExterna__tatu {
   background-repeat: no-repeat;
@@ -431,54 +436,3 @@ div.grid-galeria div:hover {
     box-shadow: -10px -10px 5px #000000;
     border-radius: 2%;
     transition: 500ms; } }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 5rem; }
-  .contacto__formulario {
-    padding: 1rem;
-    width: 40%;
-    border-radius: 5%;
-    border-top: 2px outset #000000;
-    border-left: 2px outset #000000;
-    box-shadow: 7px 7px #68C3D4;
-    background-image: url(../multimedia/contacto-fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; }
-    .contacto__formulario input {
-      width: 100%;
-      padding: 0.3rem;
-      margin-bottom: 1.5rem; }
-    .contacto__formulario textarea {
-      width: 100%; }
-    .contacto__formulario label {
-      color: #FFFFFF;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin-bottom: 0.5rem; }
-    .contacto__formulario a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #35CE8D;
-      padding-left: 0.2rem; }
-    .contacto__formulario a:hover {
-      text-decoration: underline;
-      color: #35CE8D;
-      font-weight: 700; }
-
-@media only screen and (max-width: 1350px) {
-  .contacto__formulario {
-    max-width: 70%;
-    min-width: 450px; } }
-
-@media only screen and (max-width: 480px) {
-  .contacto__formulario {
-    min-width: 320px;
-    border-radius: 0%;
-    border-top: none;
-    border-left: none;
-    box-shadow: none; } }
