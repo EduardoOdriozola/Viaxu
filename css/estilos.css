@@ -237,9 +237,6 @@ footer {
     display: none; } }
 
 @media only screen and (max-width: 480px) {
-  .fondo-home__img {
-    margin-top: 10em;
-    width: 120px; }
   .home-contacto {
     margin: 1rem 1rem; }
     .home-contacto form {
@@ -355,6 +352,11 @@ footer {
     padding-top: 0.5em;
     font-weight: 700;
     text-shadow: 2px 2px 2px #0D1821; }
+
+@media only screen and (max-width: 480px) {
+  .fondo-home__img {
+    margin-top: 10em;
+    width: 120px; } }
 
 .imgExterna, .imgExterna__ciervo, .imgExterna__pajaro, .imgExterna__tatu {
   background-repeat: no-repeat;
