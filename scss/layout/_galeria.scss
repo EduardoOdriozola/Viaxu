@@ -1,0 +1,112 @@
+//INICIO Operaciones para Galeria con background imagenes, fotos 4, 5 y 6
+//Uso de Variable con operación
+$ancho_galeria: 100vh;
+$ancho_imgExterna: $ancho_galeria - 65vh;
+// Uso de Mixin para atributos de clase reutilizable BEM
+@mixin atributos ( $bg_repeat, $bg_center ,$bg_cover, $overflow_hidden){
+    background-repeat: $bg_repeat;
+    background-position: $bg_center;
+    background-size: $bg_cover;
+    overflow: $overflow_hidden;
+}
+//Uso de Include para atributos y generar clase
+.imgExterna{
+    @include atributos( no-repeat,center ,cover ,hidden )
+}
+//Uso de each para nombre de variable y direccion url de imagen
+//Uso de Extend para incluir atributos de clase padre
+@each $animales in ciervo, pajaro, tatu {
+    .imgExterna__#{$animales} {
+        @extend .imgExterna;
+        background-image: url(../multimedia/galeria-#{$animales}.jpg);
+        height: $ancho_imgExterna;
+    }
+}
+//FIN Operaciones Galeria
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    &__img {
+        width: 400px;
+        height: 95%;
+        overflow: hidden;
+    }
+
+    &__video {
+        width:560px;
+        height:315px;
+    }
+}
+
+div.grid-galeria .grid-galeria__img:hover {
+    transform: scale(1.05);
+    box-shadow: -10px -10px 5px $crl--negro;
+    border-radius: 2%;
+    transition: 500ms;
+}
+
+div.grid-galeria div:hover {
+    transform: scale(1.05);
+    box-shadow: -10px -10px 5px $crl--negro;
+    border-radius: 2%;
+    transition: 500ms;
+}
+
+@media only screen and (max-width: 1240px){
+    /* GALERIA -  Grid Section pasa a 1 columa */
+    .grid-galeria {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    /* GALERIA -- cambia medida iframe*/
+    .grid-galeria {
+        iframe{
+            width: 400px;
+        }
+        &__img {
+            width: 320px;
+        }
+    
+        &__video {
+            width:320px;
+            height:315px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .grid-galeria {
+
+        iframe{
+            width: 320px;
+        }
+    }
+
+    div.grid-galeria .grid-galeria__img:hover {
+        transform: scale(1);
+        box-shadow: -10px -10px 5px $crl--negro;
+        border-radius: 2%;
+        transition: 500ms;
+    }
+    
+    div.grid-galeria div:hover {
+        transform: scale(1);
+        box-shadow: -10px -10px 5px $crl--negro;
+        border-radius: 2%;
+        transition: 500ms;
+    }
+}

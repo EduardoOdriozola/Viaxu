@@ -1,0 +1,28 @@
+.header-boot {
+    background: $crl--negro-azul;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.85;
+    padding-bottom: 0.8rem;
+
+    img {
+        width: 80px;
+    }
+
+    li {
+        padding: 0.4em 1em;
+    }
+    li:hover {
+        text-shadow: 1px 0px 2px $crl--verde;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .header-boot{
+        font-size: 1.1rem;
+        padding-bottom: 0.3rem;
+        img {
+            width: 60px;
+        }
+    }
+}

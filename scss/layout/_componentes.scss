@@ -1,0 +1,264 @@
+.destacar {
+    font-weight: 700;
+    color: $crl--precaucion;
+}
+
+.barra-separadora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 5rem 0rem;
+    height: 20px;
+    background-image: radial-gradient(farthest-side at 50% -50%, $crl--verde,$crl--blanco);
+
+    img {
+        width: 95px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: none;
+        transform: translateY(-55%);
+        background-color: $crl--blanco;
+        border: 6px solid rgba($crl--verde, $alpha: 0.5);
+        border-top: 1px solid rgba($crl--verde, $alpha: 0.5);
+        border-bottom: 1px solid rgba($crl--verde, $alpha: 0.5);
+    }
+}
+
+//Titulos y parrafos sitio
+.titulo-parrafo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    text-align: center;
+
+    &__margen {
+        margin-top: 5rem;
+    }
+
+    h1,h2 {
+        padding: 0.1rem 0.5rem;
+        color: $crl--verde;
+        background-color: $crl--negro-azul;
+        box-shadow:7px 7px $crl--madera;
+    }
+
+    p {
+        font-size: 1.4rem;
+        color: $crl--celeste;
+        font-weight: 600;
+        padding-top:0.7rem;
+        width: 30%;
+
+    }
+    ul{
+        text-align: justify;
+        font-size: 1.4rem;
+        color: $crl--celeste;
+        padding-top:0.7rem;
+        width: 730px;
+
+        @media only screen and (max-width: 1350px){
+            font-size: 1.1rem;
+            width: 460px;
+        }
+
+        li{
+            list-style: square;
+        }
+    }
+}
+
+// index y actividades
+.home-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+    
+}
+
+// -- index y actividades
+.home-tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    border-end-start-radius: 50px;
+    border-start-end-radius: 50px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px $crl--negro-azul;
+
+    h2,p {
+        color: $crl--amarillo;
+        font-size: 1.5rem;
+        margin-bottom: 2px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    ul {
+        color: $crl--blanco;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: -10px;
+    }
+
+    &__1 {
+        background-image: url(../multimedia/home-carpinchos.jpg);
+    }
+    &__2 {
+        background-image: url(../multimedia/home-yacare.jpg)
+    }
+    &__3 {
+        background-image: url(../multimedia/actividades-kayak.jpg);
+    }
+    &__4 {
+        background-image: url(../multimedia/actividades-cabania.jpg);
+    }
+    &__5 {
+        background-image: url(../multimedia/actividades-kayak.jpg);
+    }
+    &__6 {
+        background-image: url(../multimedia/actividades-birdwatching.jpg);
+    }
+    &__7 {
+        background-image: url(../multimedia/actividades-pelota.png);
+    }
+}
+
+.botones {
+    width: 250px;
+    align-self: center;
+	display: flex;
+	flex-flow: row;
+	gap: 1em;
+    padding: 1.5rem;
+    
+    &__estilo {
+        color: $crl--negro;
+        background-color: rgba($crl--blanco, $alpha: 0.5);
+        border: 1px outset $crl--celeste;
+        border-radius: 7px;
+        font-weight: 700;
+
+        &:hover{
+            background-color: $crl--verde;
+        }
+
+        &--limpiar{
+            color: $crl--precaucion;
+
+            &:hover {
+                color: $crl--blanco;
+                background-color: $crl--precaucion;
+            }
+        }
+    }
+    
+}
+
+//Mixin texto de div interior de tarjeta
+@mixin tarjeta-estilo ( $bg-color, $padding, $border-start-end-radius, $border-right, $ancho-div, $alto-div){
+    background-color: $bg-color;
+    padding: $padding;
+    border-start-end-radius: $border-start-end-radius;
+    border-right: $border-right;
+    width: $ancho-div;
+    height: $alto-div;
+}
+.tarjeta-texto {
+    @include tarjeta-estilo( rgba($crl--negro-azul, $alpha: 0.5),1rem 1rem 0rem 1rem ,50px ,2px solid $crl--negro-azul, 90%, 40%)
+}
+
+//Media Querys
+@media only screen and (max-width: 1350px){
+    .titulo-parrafo {
+        h1,h2 {
+            font-size: 1.5rem;
+            padding: 0.1rem 0.5rem;
+        }
+    
+        p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0rem 0rem;
+            width: 100%;
+        }
+    }
+    .barra-separadora {
+        display: none;
+        }
+
+    .home-flex {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+        row-gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-tarjeta{
+        width: 600px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 650px){
+    .home-tarjeta{
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .home-tarjeta{
+        width: 320px;
+
+        h2,p {
+            color: $crl--amarillo;
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+            font-weight: 700;
+            width: 100%;
+        }
+    
+        ul {
+            color: $crl--blanco;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: -10px;
+        }
+    }
+    
+    .titulo-parrafo{
+        ul {
+            text-align: justify;
+            font-size: 1rem;
+            color: $crl--celeste;
+            padding-top:0.7rem;
+            width: 80%;
+        }
+    }
+}

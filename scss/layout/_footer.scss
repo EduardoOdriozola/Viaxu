@@ -1,0 +1,32 @@
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    background: $crl--amarillo;
+    width: 100%;
+    padding: 0.6em;
+
+    &__link{
+        text-decoration: none;
+        color: $crl--negro;
+        font-weight: 900;
+        padding: 0rem 1em;
+        opacity: 0.7;
+    }
+
+    &__img {
+        width: 30px;
+        padding-right:0.3rem;
+    }
+
+    &__link:hover {
+        color: $crl--negro;
+        opacity: 1;
+        text-decoration: underline;
+        -text-underline-offset: 0.15em;
+        transition: 300ms;
+    }
+}
+
