@@ -41,7 +41,7 @@
         margin-top: 5rem;
     }
 
-    h1,h2 {
+    h1,h2,h3 {
         padding: 0.1rem 0.5rem;
         color: $crl--verde;
         background-color: $crl--negro-azul;
@@ -55,7 +55,18 @@
         padding-top:0.7rem;
         width: 30%;
 
-    }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $crl--verde;
+
+        }
+        a:hover {
+            text-decoration: underline;
+            color: $crl--verde;
+            font-weight: 700;
+            }
+        }
     ul{
         text-align: justify;
         font-size: 1.4rem;
@@ -71,6 +82,17 @@
         li{
             list-style: square;
         }
+    }
+    img {
+        width: 280px;
+        border-radius: 3%;
+        transition: 500ms;
+        
+    }
+    img:hover{
+        border-radius: 20%;
+        box-shadow: 3px 3px 5px $crl--verde;
+        transition: 500ms;
     }
 }
 

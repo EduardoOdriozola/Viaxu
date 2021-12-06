@@ -98,7 +98,7 @@ footer {
   text-align: center; }
   .titulo-parrafo__margen {
     margin-top: 5rem; }
-  .titulo-parrafo h1, .titulo-parrafo h2 {
+  .titulo-parrafo h1, .titulo-parrafo h2, .titulo-parrafo h3 {
     padding: 0.1rem 0.5rem;
     color: #35CE8D;
     background-color: #0D1821;
@@ -109,6 +109,14 @@ footer {
     font-weight: 600;
     padding-top: 0.7rem;
     width: 30%; }
+    .titulo-parrafo p a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #35CE8D; }
+    .titulo-parrafo p a:hover {
+      text-decoration: underline;
+      color: #35CE8D;
+      font-weight: 700; }
   .titulo-parrafo ul {
     text-align: justify;
     font-size: 1.4rem;
@@ -121,6 +129,14 @@ footer {
         width: 460px; } }
     .titulo-parrafo ul li {
       list-style: square; }
+  .titulo-parrafo img {
+    width: 280px;
+    border-radius: 3%;
+    transition: 500ms; }
+  .titulo-parrafo img:hover {
+    border-radius: 20%;
+    box-shadow: 3px 3px 5px #35CE8D;
+    transition: 500ms; }
 
 .home-flex {
   display: flex;
