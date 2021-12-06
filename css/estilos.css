@@ -118,7 +118,7 @@ footer {
       color: #35CE8D;
       font-weight: 700; }
   .titulo-parrafo ul {
-    text-align: justify;
+    text-align: start;
     font-size: 1.3rem;
     color: #68C3D4;
     padding-top: 0.7rem;
@@ -344,7 +344,7 @@ footer {
       font-weight: 400;
       margin-left: -10px; }
   .titulo-parrafo ul {
-    text-align: justify;
+    text-align: start;
     font-size: 1rem;
     color: #68C3D4;
     padding-top: 0.7rem;
