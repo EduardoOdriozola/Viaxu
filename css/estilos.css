@@ -119,10 +119,10 @@ footer {
       font-weight: 700; }
   .titulo-parrafo ul {
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #68C3D4;
     padding-top: 0.7rem;
-    width: 730px; }
+    width: 600px; }
     @media only screen and (max-width: 1350px) {
       .titulo-parrafo ul {
         font-size: 1.1rem;

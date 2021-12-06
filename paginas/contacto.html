@@ -43,36 +43,34 @@
     
     <!-- PROPUESTA -->
     <main>
-        <!-- SCSS _contacto -->
-        <section class="fondo-cont">
-            <!-- SCSS _componentes -->
-            <article class="titulo-parrafo titulo-parrafo__margen">
-                <h1>¿POR QUE NOSOTROS?</h1>
-                    <p>Todo pensando en vos</p>
-                    <p>Mas de 15 años de experiencia</p>
-                    <p>Un staff de profesionales</p>
-                    <p>Actividades opcionales nocturnas</p>
-            </article>
-            <!--FORMULARIO SCSS _contacto -->
-            <div class="titulo-parrafo">
-                <h2>Contacto</h2>
-                <p>Complete a continuación el siguiente formulario</p>
-            </div>
-            <article class="home-contacto">
-                <form enctype="text/plain" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre/es">
-                    <input type="text" name="apellido" placeholder="Apellido/os">
-                    <input type="email" name="correo" placeholder="nombre@email.com" required>
-                    <textarea name="comentarios" rows="10" cols="30"
-                        placeholder="Escriba sus preguntas, comentarios e inquietudes:"></textarea>
-                    <label for="condiciones">Acepto los <a href="../paginas/terminos.html">Terminos</a></label>
-                    <input type="checkbox" name="condiciones" required>
-                    <div class="botones">
-                        <input type="submit" value="Enviar" class="botones__estilo">
-                        <input type="reset" value="Limpiar" class="botones botones__estilo botones__estilo--limpiar">
-                    </div>
-                </form>
-            </article>
+        <!-- SCSS _componentes -->
+        <section class="titulo-parrafo titulo-parrafo__margen">
+            <h1>¿POR QUE NOSOTROS?</h1>
+                <ul>
+                    <li>Un staff de profesionales con más de 15 años de experiencia</li>
+                    <li>Actividades opcionales nocturnas</li>
+                    <li>Descuentos de temporada y planes de grupo</li>
+                </ul>
+        </section>
+        <!--FORMULARIO SCSS _contacto -->
+        <div class="titulo-parrafo">
+            <h2>Contacto</h2>
+            <p>Una guía completa será enviada a su correo</p>
+        </div>
+        <section class="home-contacto">
+            <form enctype="text/plain" method="post">
+                <input type="text" name="nombre" placeholder="Nombre/es">
+                <input type="text" name="apellido" placeholder="Apellido/os">
+                <input type="email" name="correo" placeholder="nombre@email.com" required>
+                <textarea name="comentarios" rows="10" cols="30"
+                    placeholder="Escriba sus preguntas, comentarios e inquietudes:"></textarea>
+                <label for="condiciones">Acepto los <a href="../paginas/terminos.html">Terminos</a></label>
+                <input type="checkbox" name="condiciones" required>
+                <div class="botones">
+                    <input type="submit" value="Enviar" class="botones__estilo">
+                    <input type="reset" value="Limpiar" class="botones botones__estilo botones__estilo--limpiar">
+                </div>
+            </form>
         </section>
     </main>
 

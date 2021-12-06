@@ -55,36 +55,38 @@
                 </ul>
             </div>
         </section>
-                <!-- SCSS _componentes -->
-                <section>
-                    <div class="titulo-parrafo">
-                        <h2>¿Dudas o consultas? ESCRIBINOS</h2>
-                        <p>Preguntanos sobre nuestros planes de grupo</p>
-                        <ul>
-                            <li>Tramitamos su permiso de ingreso al Parque Nacional Iberá</li>
-                            <li>En el Parque Nacional Iberá se trabaja bajo protocolo de emergencia con días y cupos establecidos</li>
-                            <li>Para más información contactárse al 011-39853800 Interno 75001 ó ibera@apn.gob.ar</li>
-                        </ul>
+        <!-- SCSS _componentes -->
+        <section>
+            <div class="titulo-parrafo">
+                <h2>¿Dudas o consultas? ESCRIBINOS</h2>
+                <p>Preguntanos sobre nuestros planes de grupo</p>
+                <ul>
+                    <li>Tramitamos su permiso de ingreso al Parque Nacional Iberá</li>
+                    <li>En el Parque Nacional Iberá se trabaja bajo protocolo de emergencia con días y cupos establecidos</li>
+                    <li>Para más información contactárse al 011-39853800 Interno 75001 ó ibera@apn.gob.ar</li>
+                </ul>
+            </div>
+            <div class="home-contacto">
+                <!-- Formulario SCSS _home-->
+                <form enctype="text/plain" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre/es">
+                    <input type="text" name="apellido" placeholder="Apellido/os">
+                    <input type="email" name="correo" placeholder="nombre@email.com" required>
+                    <textarea name="comentarios" rows="10" cols="30"
+                        placeholder="Escriba sus preguntas, comentarios e inquietudes:"></textarea>
+                    <label for="condiciones">Acepto los <a href="./paginas/terminos.html">Terminos</a></label>
+                    <input type="checkbox" name="condiciones" required>
+                    <div class="botones">
+                        <input type="submit" value="Enviar" class="botones botones__estilo">
+                        <input type="reset" value="Limpiar" class="botones botones__estilo botones__estilo--limpiar">
                     </div>
-                    <div class="home-contacto">
-                        <!-- Formulario SCSS _home-->
-                        <form enctype="text/plain" method="post">
-                            <input type="text" name="nombre" placeholder="Nombre/es">
-                            <input type="text" name="apellido" placeholder="Apellido/os">
-                            <input type="email" name="correo" placeholder="nombre@email.com" required>
-                            <textarea name="comentarios" rows="10" cols="30"
-                                placeholder="Escriba sus preguntas, comentarios e inquietudes:"></textarea>
-                            <label for="condiciones">Acepto los <a href="./paginas/terminos.html">Terminos</a></label>
-                            <input type="checkbox" name="condiciones" required>
-                            <div class="botones">
-                                <input type="submit" value="Enviar" class="botones botones__estilo">
-                                <input type="reset" value="Limpiar" class="botones botones__estilo botones__estilo--limpiar">
-                            </div>
-                        </form>
-                        <!-- Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899628.2977617839!2d-58.06071249809839!3d-28.262769484086256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94510c9dfd072b91%3A0x9bb4dc35925f3a41!2sEsteros%20del%20Iber%C3%A1!5e0!3m2!1ses-419!2sar!4v1637086430473!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </section>
+                </form>
+                <!-- Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899628.2977617839!2d-58.06071249809839!3d-28.262769484086256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94510c9dfd072b91%3A0x9bb4dc35925f3a41!2sEsteros%20del%20Iber%C3%A1!5e0!3m2!1ses-419!2sar!4v1637086430473!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
     </main>
 
     <!-- SCSS _footer -->
